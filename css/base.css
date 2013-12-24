@@ -182,11 +182,16 @@ input[type='submit']:hover {background: #1EBA6B; color: #fff;}
 
 
 /*
-* Gallery Praise
+* Gallery for Praise
 */
 .galleryPraise a {height: 120px; overflow: hidden; float: left; margin: 5px; }
 .galleryPraise a img {width: 120px;}
 
+/* 
+ * for hovering over images to create effect 
+ */
+.galleryPanel a {height: 120px; overflow: hidden; float: left; margin: 5px; }
+.galleryPanel a img:hover{ opacity:0.4; filter:alpha(opacity=100);}
 
 /*
 * a#Top
@@ -282,12 +287,4 @@ footer .social a:hover img {opacity: 1;}
 
 
 }
-
-
-
-
-
-
-
-
 
