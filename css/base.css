@@ -78,7 +78,13 @@ header h4 {font-weight: normal; margin-bottom: 10px;}
 * Logo
 */
 .logo a {color: #ddd; text-decoration: none; line-height: 20px;}
-.logo a:hover {color: #5A99C7;}
+.logo a:hover {color: #5A99C7;
+	-webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
 
 
 
@@ -90,11 +96,11 @@ ul.mainMenu {margin: 0; padding: 0; float: right;}
 ul.mainMenu li {display: inline; float: left; margin: 2px 10px;}
 ul.mainMenu li a {font-size: 16px; color: #5A99C7; text-decoration: none;}
 ul.mainMenu li a:hover {color: #AED4F0;
-	-webkit-transition: color .12s ease-in-out;
-    -moz-transition: color .12s ease-in-out;
-    -ms-transition: color .12s ease-in-out;
-    -o-transition: color .12s ease-in-out;
-    transition: color .12s ease-in-out;
+	-webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
 }
 
 
@@ -136,12 +142,12 @@ ul.mainMenu li a:hover {color: #AED4F0;
 .white {width: 100%; float: left; clear: both; background: #ffffff; margin: 50px 0; padding: 45px 0; color: #585858; text-align: center; position: relative;z-index: 1;}
 .white h2 {width: 100%; margin: 20px 0 50px; text-align: center; text-shadow: none;}
 .white p {width: 600px; margin: 0 auto 30px; color: #585858; text-align: center;}
-.white a.dalej {display: block; width: 185px; background: #2F6186; color: #fff; margin: 0 auto 20px; padding: 10px 20px; font-size: 12px; text-transform: uppercase;
-	border-radius: 30px;
-	-moz-border-radius: 30px;
-	-webkit-border-radius: 30px;
+.white a.dalej {display: block; width: 300px; background: #5A99C7; color: #fff; margin: 0 auto 20px; padding: 10px 20px; font-size: 14px; text-transform: uppercase;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
 }
-.white a.dalej:hover {background: #fff; color: #2F6186;}
+.white a.dalej:hover {background: #AED4F0; color: #ffffff;}
 
 
 
@@ -220,6 +226,12 @@ a.green {background: #45C491; color: #fff;
 a.green:hover {background: #36ae7e}
 
 
+a.blue {background: #5A99C7; color: #fff;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.2), 0 1px 0 0 rgba(255,255,255,.2) inset;
+	-moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,.2), 0 1px 0 0 rgba(255,255,255,.2) inset;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.2), 0 1px 0 0 rgba(255,255,255,.2) inset;
+}
+a.blue:hover {background: #AED4F0}
 
 /*
 * Footer
