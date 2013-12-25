@@ -40,7 +40,7 @@
 	<link rel="stylesheet" href="../css/layout.css">
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-	<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 	<link rel="stylesheet" type="text/css" href="../js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -65,6 +65,87 @@
 					<a href='../index.html'>Dave Yan</a>
 				</div>
 
+				<div class='eleven columns'>
+					<ul class='mainMenu'>
+						<li><a href='../index.html' title='Home'>Home</a></li>
+						<li><a href='../portfolio.html' title='Portfolio'>Portfolio</a></li>
+						<li><a href='../resume.pdf' target="_blank" title='Resume'>Resume</a></li>
+						<li><a href='../contact.html' title='Contact'>Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
+		<div class='container'>
+			<div class='slogan'>
+				<div class='ten columns'>
+					<h1>Mortis</h1>
+				</div>
+			
+			<div class='container'>
+				<div class='one-third column gallery'>
+					<a rel="example_group" href='../images/portfolio/mortis1.jpg'><img src='../images/portfolio/mortis1.jpg'></a>
+					<a rel="example_group" href='../images/portfolio/mortis2.jpg'><img src='../images/portfolio/mortis2.jpg'></a>
+					<a rel="example_group" href='../images/portfolio/mortis3.jpg'><img src='../images/portfolio/mortis3.jpg'></a>
+					<a rel="example_group" href='../images/portfolio/mortis4.jpg'><img src='../images/portfolio/mortis4.jpg'></a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</header>
+	
+	<div class='container Focus'>
+		<div class='eight columns'>
+			<h4>What Is It?</h4>
+			<div class='clear'></div>
+			<p></p>
+		</div>
+		
+		<div class='eight columns'>
+			<h4>What Is It About?</h4>
+			<div class='clear'></div>
+			<p></p>	
+		</div>
+			
+		<div class='clear'></div>
+		
+		<div class='eight columns'>
+			<h4>What Did I Do?</h4>
+			<div class='clear'></div>
+			<p></p>
+		</div>
+		
+		<div class='eight columns'>
+			<h4>Where To Play It?</h4>
+			<div class='clear'></div>
+			<p></p>
+		</div>
+	</div>
+			
+	
+		<div class="gray">
+		<a href="../https://www.andrew.cmu.edu/user/lwzhang/outfitter/index.html" target="_blank">
+			<h1>Download Here</h1>
+		</a>
+	</div>
+	
+	<footer></footer>
+	<script type="text/javascript">
+		var toper = $('a#top');
+
+
+		$(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                toper.fadeIn( 200 );
+            } else {
+                toper.fadeOut( 200 );
+            }
+        });
+
+         toper.click(function(){
+        	$('html, body').animate({scrollTop:0}, 500);	        	
+        	return false;
+    	}); 
+	</script>
 </body>
 </html>

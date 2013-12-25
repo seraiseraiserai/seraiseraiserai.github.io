@@ -1,0 +1,148 @@
+<!-- =============================================== -->
+<!-- =                                             = -->
+<!-- =                Keyners	                   = -->
+<!-- =                                             = -->
+<!-- =          http://keyners.com/	               = -->
+<!-- =============================================== -->
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Dave Yan - Portfolio - PRAISE</title>
+	<meta name="description" content="">
+	<meta name="author" content=" Made by Keyners">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- PT Sans -->
+	<link href='../http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+	<!-- Crete Roung -->
+	<link href='../http://fonts.googleapis.com/css?family=Crete+Round&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+	<!-- CSS
+  ================================================== -->
+  	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/skeleton.css">
+	<link rel="stylesheet" href="../css/layout.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+	<script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="../js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	<script type="text/javascript">
+		$(document).ready(function() {
+				$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+				
+					return '';
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+
+
+	<header>			
+		<nav>
+			<div class='container'>
+				<div class='five columns logo'>
+					<a href='../index.html'>Dave Yan</a>
+				</div>
+
+				<div class='eleven columns'>
+					<ul class='mainMenu'>
+						<li><a href='../index.html' title='Home'>Home</a></li>
+						<li><a href='../portfolio.html' title='Portfolio'>Portfolio</a></li>
+						<li><a href='../resume.pdf' target="_blank" title='Resume'>Resume</a></li>
+						<li><a href='../contact.html' title='Contact'>Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class='container'>
+			<div class='slogan'>
+				<div class='ten columns'>
+					<h1>PRAISE</h1>
+				</div>
+			
+			<div class='container'>
+				<div class='one-third column galleryPraise'>
+					<a rel="example_group" href='../images/portfolio/praise1.jpg'><img src='../images/portfolio/praise1.jpg'></a>
+					<a rel="example_group" href='../images/portfolio/praise2.jpg'><img src='../images/portfolio/praise2.jpg'></a>
+					<a rel="example_group" href='../images/portfolio/praise3.jpg'><img src='../images/portfolio/praise3.jpg'></a>
+					<a rel="example_group" href='../images/portfolio/praise4.jpg'><img src='../images/portfolio/praise4.jpg'></a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</header>
+	
+	<div class='container Focus'>
+		<div class='eight columns'>
+			<h4>What Is It?</h4>
+			<div class='clear'></div>
+			<p>PRAISE allows art students with hearing disabilities to peer review each other's works with an iPad app. Students can write reviews, rate, and annotate aspects of drawings. It is my research project for CMU's Human Computer Interaction Institute that I started in January 2013.</p>
+		</div>
+		
+		<div class='eight columns'>
+			<h4>What Is It Written In?</h4>
+			<div class='clear'></div>
+			<p>The iPad app is written in Objective-C. The backend server is written in Python, and the frontend of the server for teachers is written in Actionscript and MXML.</p>
+		</div>
+		<div class='clear'></div>
+	
+		<div class='eight columns'>
+			<h4>What Did I Do?</h4>
+			<div class='clear'></div>
+			<p>I first designed the user interface of the app, starting from brainstorming to paper prototyping and finalization using an iterative process. Then I implemented the finalized design. At the same time, I improved the backend of the app and the server it uses to be more reliable and robust with more features.</p>
+		</div>
+		
+		<div class='eight columns'>
+			<h4>What Did I Learn?</h4>
+			<div class='clear'></div>
+			<p>I learned user interface design processes such as paper prototyping, iOS development and communication between programs via network. I also learned how to use Mac OS X, Xcode, and Flash Builder.</p>
+		</div>
+	</div>
+	
+	<div class="clear"></div>
+	<div class='clear'></div>
+	<div class='clear'></div>
+	
+	<footer></footer>
+	<script type="text/javascript">
+		var toper = $('a#top');
+
+
+		$(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                toper.fadeIn( 200 );
+            } else {
+                toper.fadeOut( 200 );
+            }
+        });
+
+         toper.click(function(){
+        	$('html, body').animate({scrollTop:0}, 500);	        	
+        	return false;
+    	}); 
+	</script>
+</body>
+</html>
