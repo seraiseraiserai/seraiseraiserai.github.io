@@ -32,7 +32,7 @@ a, a:visited {text-decoration: none; color: #585858;}
 */
 h1 {font-size: 1.8em; line-height: 1.23em;}
 h2 {font-size: 22px;}
-h3 {font-size: 24px; font-family: 'Crete Round', Georgia, serif; font-weight: 400; padding: 20px 0;}
+h3 {font-size: 24px; font-family: 'Crete Round', Georgia, serif; font-weight: 400; padding: 20px 0; text-align:left}
 h4 {font-size: 22px;}
 h5 {font-size: 16px; padding-bottom: 10px;}
 h6 {font-size: 14px; padding-bottom: 10px; font-weight: bold;}
@@ -141,7 +141,7 @@ ul.mainMenu li a:hover {color: #AED4F0;
 */
 .white {width: 100%; float: left; clear: both; background: #ffffff; margin: 50px 0; padding: 45px 0; color: #585858; text-align: center; position: relative;z-index: 1;}
 .white h2 {width: 100%; margin: 20px 0 50px; text-align: center; text-shadow: none;}
-.white p {width: 600px; margin: 0 auto 30px; color: #585858; text-align: center;}
+.white p {width: 100%; height: 100%; margin: 0 auto 30px; text-align: center;}
 .white a.dalej {display: block; width: 300px; background: #5A99C7; color: #fff; margin: 0 auto 20px; padding: 10px 20px; font-size: 14px; text-transform: uppercase;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
