@@ -16,7 +16,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Dave Yan - Portfolio - Mortis</title>
+	<title>Dave Yan - Portfolio - Sweet Potato</title>
 	<meta name="description" content="">
 	<meta name="author" content=" Made by Keyners">
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
@@ -50,7 +50,14 @@
 				'transitionOut'		: 'none',
 				'titlePosition' 	: 'over',
 				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+					if(currentIndex == 0)
+						return '<span id="fancybox-title-over">Figure 1: Output of a raytraced scene';
+					else if(currentIndex == 1)
+						return '<span id="fancybox-title-over">Figure 2: This demonstrates shadow ray casting';
+					else if(currentIndex == 2)
+						return '<span id="fancybox-title-over">Figure 3: Reflections from raytraced spheres';
+					else if(currentIndex == 3)
+						return '<span id="fancybox-title-over">Figure 4: Raytrace of the famous "Cornell Box" scene';
 				}
 			});
 		});
@@ -59,7 +66,7 @@
 <body>
 
 
-	<header>			
+	<header>
 		<nav>
 			<div class='container'>
 				<div class='five columns logo'>
@@ -79,61 +86,53 @@
 		<div class='container'>
 			<div class='slogan'>
 				<div class='ten columns'>
-					<h1>Mortis</h1>
+					<h1>Sweet Potato</h1>
 				</div>
 			
 			<div class='container'>
 				<div class='one-third column gallery'>
-					<a rel="example_group" href='../images/portfolio/mortis1.jpg'><img src='../images/portfolio/mortis1.jpg'></a>
-					<a rel="example_group" href='../images/portfolio/mortis2.jpg'><img src='../images/portfolio/mortis2.jpg'></a>
-					<a rel="example_group" href='../images/portfolio/mortis3.jpg'><img src='../images/portfolio/mortis3.jpg'></a>
-					<a rel="example_group" href='../images/portfolio/mortis4.jpg'><img src='../images/portfolio/mortis4.jpg'></a>
+					<a rel="example_group" href='../images/portfolio/rt1.jpg'><img src='../images/portfolio/rt1.jpg'></a>
+					<a rel="example_group" href='../images/portfolio/rt2.jpg'><img src='../images/portfolio/rt2.jpg'></a>
+					<a rel="example_group" href='../images/portfolio/rt3.jpg'><img src='../images/portfolio/rt3.jpg'></a>
+					<a rel="example_group" href='../images/portfolio/rt4.jpg'><img src='../images/portfolio/rt4.jpg'></a>
 				</div>
 			</div>
 			</div>
 		</div>
 	</header>
 	
-    TODO
-    we used an approach similar to thatgamecompany. start off with player emotions
-
-
 	<div class='container Focus'>
 		<div class='eight columns'>
 			<h4>What Is It?</h4>
 			<div class='clear'></div>
-			<p>"Mortis" is a 2D sidescrolling puzzle platformer made in XNA.</p>
+			<p></p>
 		</div>
 		
 		<div class='eight columns'>
-			<h4>What Is It About?</h4>
+			<h4>What Is It Written In?</h4>
 			<div class='clear'></div>
-			<p>The player controls Death. The main game mechanic revolves around the ability to take life force from NPCs and give it to others, which is then used to solve puzzles to reach the next level. </p>	
+			<p></p>
 		</div>
-			
+		
 		<div class='clear'></div>
 		
 		<div class='eight columns'>
-			<h4>What Did I Do?</h4>
+			<h4>What Is the Algorithm?</h4>
 			<div class='clear'></div>
-			<p>I joined a team of 16 other people from CMU's Game Creation Society (GCS) in September 2013. I worked as the art lead and managed a team of 8. I organized workload distribution, communicated with members to hear their opinions, kept the visual style on track, and worked with the programming and design team to integrate our assets. I learned how to manage a team and merge their works into a finished product. This game won GCS Gold at the end of the semester.</p>
+			<p></p>
 		</div>
 		
+		
 		<div class='eight columns'>
-			<h4>Where To Play It?</h4>
+			<h4>What Did I Learn?</h4>
 			<div class='clear'></div>
-			<p>The download link is below. The file is 88MB, and currently only works on Windows (requires XNA framework installed, which can be found <a href="http://www.microsoft.com/en-us/download/details.aspx?id=20914" target="_blank" style="color: #5A99C7">here</a>). The last level is still working progress and thus cannot be beaten, but the assets and part of the gameplay are in place. </p>
+			<p></p>
 		</div>
 	</div>
-			
 	
-	<div class="white">
-		<h1><a href="http://stage.gamecreation.org/mortis/MortisWindows.zip" target="_blank" class='dalej'>Download Mortis for Windows</a></h1>
-		</a>
-
-		<h1><a href="http://stage.gamecreation.org/mortis/MortisMac.zip" target="_blank" class='dalej'>Download Mortis for Mac</a></h1>
-		</a>
-	</div>
+	<div class="clear"></div>
+	<div class='clear'></div>
+	<div class='clear'></div>
 	
 	<footer></footer>
 	<script type="text/javascript">
