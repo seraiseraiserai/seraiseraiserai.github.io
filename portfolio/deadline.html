@@ -16,7 +16,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Dave Yan - Portfolio - Fish in a Pond</title>
+	<title>Dave Yan - Portfolio - Deadline</title>
 	<meta name="description" content="">
 	<meta name="author" content=" Made by Keyners">
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
@@ -50,29 +50,18 @@
 				'transitionOut'		: 'none',
 				'titlePosition' 	: 'over',
 				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					return "";
+					if(currentIndex == 0)
+						return '<span id="fancybox-title-over">Figure 1: Output of a raytraced scene';
+					else if(currentIndex == 1)
+						return '<span id="fancybox-title-over">Figure 2: This demonstrates shadow ray casting';
+					else if(currentIndex == 2)
+						return '<span id="fancybox-title-over">Figure 3: Reflections from raytraced spheres';
+					else if(currentIndex == 3)
+						return '<span id="fancybox-title-over">Figure 4: Raytrace of the famous "Cornell Box" scene';
 				}
 			});
 		});
-
-		$('a.more').on('click', function(event) {
-		    event.preventDefault();
-		    $.fancybox({
-		        'type' : 'iframe',
-		        // hide the related video suggestions and autoplay the video
-		        'href' : this.href.replace(new RegExp('watch\\?v=', 'i'), 'embed/') + '?rel=0&autoplay=1',
-		        'overlayShow' : true,
-		        'centerOnScroll' : true,
-		        'speedIn' : 100,
-		        'speedOut' : 50,
-		        'width' : 640,
-		        'height' : 480
-    });
-});
 	</script>
-
-
-
 </head>
 <body>
 
@@ -96,53 +85,54 @@
 
 		<div class='container'>
 			<div class='slogan'>
-				<div class='eight columns'>
-					<h1>Fish in a Pond</h1>
+				<div class='ten columns'>
+					<h1>Deadline</h1>
 				</div>
 			
-				<div class='one columns'>
-				<iframe width="420" height="345"
-				 src="http://www.youtube.com/embed/bXbHPk1Ty6A">
-				</iframe>
+			<div class='container'>
+				<div class='one-third column gallery'>
+					<a rel="example_group" href='../images/portfolio/rt1.jpg'><img src='../images/portfolio/rt1.jpg'></a>
+					<a rel="example_group" href='../images/portfolio/rt2.jpg'><img src='../images/portfolio/rt2.jpg'></a>
+					<a rel="example_group" href='../images/portfolio/rt3.jpg'><img src='../images/portfolio/rt3.jpg'></a>
+					<a rel="example_group" href='../images/portfolio/rt4.jpg'><img src='../images/portfolio/rt4.jpg'></a>
 				</div>
+			</div>
 			</div>
 		</div>
 	</header>
-
-
+	
 	<div class='container Focus'>
 		<div class='eight columns'>
 			<h4>What Is It?</h4>
 			<div class='clear'></div>
-			<p>The user teaches a fish that lives in a pond to play the tunes he or she likes via the stars in the sky and the reflections in the water. This is the final project of CMU's Electronic Media Studio II and is written within 2 weeks.</p>
+			<p></p>
 		</div>
-
+		
 		<div class='eight columns'>
-			<h4>How does it Work?</h4>
+			<h4>What Is It Written In?</h4>
 			<div class='clear'></div>
-			<p>The user can either choose to let the fish play a tune, or play a tune to the fish via a MIDI keyboard. After the tune is played, the user votes whether it is likable or unlikable. The fish will then learn via a machine learning algorithm and adjust the tunes it plays in the future to the user's preferences.</p>
+			<p></p>
 		</div>
 		
 		<div class='clear'></div>
 		
 		<div class='eight columns'>
-			<h4>How was it Made?</h4>
+			<h4>What Is the Algorithm?</h4>
 			<div class='clear'></div>
-			<p>The project is written in Processing, the graphics are made in Adobe Photoshop. The libraries I used are Wekaizing (which uses Weka as its backend) for machine learning and RWMidi for MIDI keyboard input support. I also used sound effects from freesound.org. Also special thanks to Professor Richard Randall and Professor Golan Levin at CMU for advising me through this project.</p>
+			<p></p>
 		</div>
-
+		
+		
 		<div class='eight columns'>
-			<h4>What Is the Purpose?</h4>
+			<h4>What Did I Learn?</h4>
 			<div class='clear'></div>
-			<p>My research professor has a project called Simstudent (<a href="http://www.simstudent.org">simstudent.org</a>) where a human student teaches a computer "Simstudent" algebra so the human student can learn via teaching. I found great joy in teaching it to slowly become a math genius. I wish to create the same emotion in my users as they raise some silly fish to becoming able to play tunes that he or she likes to hear.
-			</p>
+			<p></p>
 		</div>
 	</div>
 	
-	<div class="white">
-		<h1><a href="https://github.com/fdu5526/fishinapond" target="_blank" class='dalej'>View Source Code on Github</a></h1>
-		</a>
-	</div>
+	<div class="clear"></div>
+	<div class='clear'></div>
+	<div class='clear'></div>
 	
 	<footer></footer>
 	<script type="text/javascript">
