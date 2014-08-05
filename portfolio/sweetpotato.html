@@ -87,6 +87,9 @@
 			<div class='slogan'>
 				<div class='ten columns'>
 					<h1>Sweet Potato</h1>
+					<div class='ten columns'>
+						<h5>Asks and Answers Questions On Wikipedia Articles</h5>
+					</div>
 				</div>
 			
 
@@ -98,13 +101,13 @@
 		<div class='eight columns'>
 			<h4>What Is It?</h4>
 			<div class='clear'></div>
-			<p>Sweet Potato is our group's (3 people total) submission for CMU's Natural Language Processing course's term project. Our program takes in Wikipedia articles, generate human-readable questions on them, and produces answers to these questions. It then competes with those of others in a battle for supremacy.</p>
+			<p>Sweet Potato is our group's (3 people total) submission for CMU's Natural Language Processing course's term project. Our program reads in Wikipedia articles, generates human-readable questions on them, and produces answers to these questions. It then competes with those of others in a battle for supremacy.</p>
 		</div>
 		
 		<div class='eight columns'>
-			<h4>What Is It Written In?</h4>
+			<h4>How Does It Work?</h4>
 			<div class='clear'></div>
-			<p>NLTK, stanford parser, cross validation, SVM, machine learning, TF/IDF</p>
+			<p>We used multiple languages and APIs in our development. For our question generator, we used Java, based on the Stanford CoreNLP parser, to break down and rearrange sentences to overgenerate questions. Next, we pass the output to Python, which uses the SKLearn package to rank questions via SVM, and pick the best ones.For our question answerer, we once again used StanfordCoreNLP to first resolve pronuns, and we also feed the output into Python, which runs an algorithm that is based on weighted TF/IDF.</p>
 		</div>
 		
 		<div class='clear'></div>
