@@ -50,14 +50,7 @@
 				'transitionOut'		: 'none',
 				'titlePosition' 	: 'over',
 				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					if(currentIndex == 0)
-						return '<span id="fancybox-title-over">Figure 1: Output of a raytraced scene';
-					else if(currentIndex == 1)
-						return '<span id="fancybox-title-over">Figure 2: This demonstrates shadow ray casting';
-					else if(currentIndex == 2)
-						return '<span id="fancybox-title-over">Figure 3: Reflections from raytraced spheres';
-					else if(currentIndex == 3)
-						return '<span id="fancybox-title-over">Figure 4: Raytrace of the famous "Cornell Box" scene';
+					return "";
 				}
 			});
 		});
@@ -87,9 +80,6 @@
 			<div class='slogan'>
 				<div class='ten columns'>
 					<h1>Loop Subdivision</h1>
-					<div class='ten columns'>
-						<h5>Make 3D Models Smooth</h5>
-					</div>
 				</div>
 			
 			<div class='container'>
@@ -112,9 +102,9 @@
 		</div>
 		
 		<div class='eight columns'>
-			<h4>How Is It Made?</h4>
+			<h4>What Is It Written In?</h4>
 			<div class='clear'></div>
-			<p>The loop subdivison algorithm is written in C++ using OpenGL.</p>
+			<p>The loop subdivison algorithm is written in C++ using the OpenGL.</p>
 		</div>
 		
 		<div class='clear'></div>
