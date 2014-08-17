@@ -190,8 +190,8 @@ input[type='submit']:hover {background: #1EBA6B; color: #fff;}
 /*
 * Gallery for Praise
 */
-.galleryPraise a {height: 120px; overflow: hidden; float: left; margin: 5px; }
-.galleryPraise a img {width: 120px;}
+.galleryPraise a {height: 150px; overflow: hidden; float: left; margin: 5px; }
+.galleryPraise a img {width: 150px;}
 
 /*
 * a#Top
@@ -302,8 +302,8 @@ footer .social a:hover img {opacity: 1;}
  */
 .imgWrap {
   position: relative;
-  height: 225px;
-  width: 300px;
+  height: 270px;
+  width: 360px;
 }
 
 .imgDescription {

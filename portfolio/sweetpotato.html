@@ -69,7 +69,7 @@
 					<a href='../index.html'>Dave Yan</a>
 				</div>
 
-				<div class='twelve columns'>
+				<div class='fourteen columns'>
 					<ul class='mainMenu'>
 						<li><a href='../portfolio.html' title='Portfolio'>Portfolio</a></li>
 						<li><a href='../resume.pdf' target="_blank" title='Resume'>Resume</a></li>
@@ -102,7 +102,7 @@
 	</header>
 	
 	<div class='container Focus'>
-		<div class='eight columns'>
+		<div class='ten columns'>
 			<h4>What Is It?</h4>
 			<div class='clear'></div>
 			<p>Sweet Potato is our group's (3 people total) submission for CMU's Natural Language Processing course's semester-long project. Our program reads in Wikipedia articles, generates human-readable questions on them, and produces answers to these questions. It then competes with those of others in a battle for supremacy.</p>
@@ -110,7 +110,7 @@
 			<p>The name "Swee Potato" is just something random we came up with for the name of our repository, nothing more.</p>
 		</div>
 		
-		<div class='eight columns'>
+		<div class='ten columns'>
 			<h4>How Is It Made?</h4>
 			<div class='clear'></div>
 			<p>We used multiple languages and APIs in our development. For our question generator, we used Java, based on the Stanford CoreNLP parser, to break down and rearrange sentences to overgenerate questions. Next, we pass the output to Python, which uses the SKLearn package to rank questions via SVM, and pick the best ones.For our question answerer, we once again used StanfordCoreNLP to first resolve pronuns, and we also feed the output into Python, which tokenizes via NLTK and runs an algorithm that is based on weighted TF/IDF.</p>
@@ -118,14 +118,14 @@
 		
 		<div class='clear'></div>
 		
-		<div class='eight columns'>
+		<div class='ten columns'>
 			<h4>What Did I Do?</h4>
 			<div class='clear'></div>
 			<p>I focused on the Java area of our code, working closely with the Stanford CoreNLP library. First of this is the question overgenerator, which I included multiple ways to trick and mislead other teams' answerers, such as switching pronouns. I also made a pronoun resolver, since answers with pronouns in them are generally nonsensical. Our question generator produced the 3rd hardest question sets out of the 25 groups, where over half of the answers were incorrect. </p>
 		</div>
 		
 		
-		<div class='eight columns'>
+		<div class='ten columns'>
 			<h4>What Did I Learn?</h4>
 			<div class='clear'></div>
 			<p>Besides applications of natural language processing algorithms, I learned aspects of agile development, rapid prototyping, and workflow with multiple people on a single repository for an extended amount of time. I also learned that English is a language with many edge cases which causes the limitations of current NLP techniques.</p>
