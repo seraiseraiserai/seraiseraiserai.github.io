@@ -32,13 +32,13 @@ a, a:visited {text-decoration: none; color: #585858;}
 */
 h1 {font-family: "Lato", sans-serif;}
 h2 {font-size: 22px;}
-h3 {font-size: 32px; font-family: 'Georgia', serif; font-weight: 400; padding: 20px 0; text-align:left}
-h4 {font-size: 30px; font-family: 'Georgia' serif;}
+h3 {font-size: 32px; font-family: 'Lato', sans-serif; font-weight: 400; padding: 20px 0; text-align:left}
+h4 {font-size: 30px; font-family: 'Lato' sans-serif;}
 h5 {font-size: 20px; font-family: 'Lato' sans-serif; padding-bottom: 10px;}
 h6 {font-size: 14px; padding-bottom: 10px; font-weight: bold;}
 h5 b {font-weight: bold;}
-h7 {font-size: 18px; font-family: 'Georgia', serif; font-weight: 400; padding: 20px 0;}
-h8 {font-size: 18px; font-family: 'Georgia', serif; font-weight: 400; padding: 20px 0; color: #ffffff}
+h7 {font-size: 18px; font-family: 'Lato', sans-serif; font-weight: 400; padding: 20px 0;}
+h8 {font-size: 18px; font-family: 'Lato', sans-serif; font-weight: 400; padding: 20px 0; color: #ffffff}
 
 /*
 * Lista NIE uporzadkowana UL
