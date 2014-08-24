@@ -51,9 +51,14 @@
 				$("a[rel=example_group]").fancybox({
 				'transitionIn'		: 'none',
 				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over',
+				'titlePosition' 	: 'inside',
 				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					return "";
+					if(currentIndex == 0)
+						return '<span id="fancybox-title-inside">Figure 1: We start off with a fish in a pond';
+					else if(currentIndex == 1)
+						return '<span id="fancybox-title-inside">Figure 2: Player uses the keyboard to play a tune up in the stars';
+					else if(currentIndex == 2)
+						return '<span id="fancybox-title-inside">Figure 3: The fish then plays its own tune in the reflections';
 				}
 			});
 		});

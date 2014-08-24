@@ -51,16 +51,16 @@
 				$("a[rel=example_group]").fancybox({
 				'transitionIn'		: 'none',
 				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over',
+				'titlePosition' 	: 'inside',
 				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
 					if(currentIndex == 0)
-						return '<span id="fancybox-title-over">';
+						return '<span id="fancybox-title-inside">Figure 1: Most of the initial art is made in Photoshop';
 					else if(currentIndex == 1)
-						return '<span id="fancybox-title-over">';
+						return '<span id="fancybox-title-inside">Figure 2: Some backgrounds are first modeled in Maya, then rendered and painted in Photoshop';
 					else if(currentIndex == 2)
-						return '<span id="fancybox-title-over">';
+						return '<span id="fancybox-title-inside">Figure 3: Action lines inspired by manga styles';
 					else if(currentIndex == 3)
-						return '<span id="fancybox-title-over">';
+						return '<span id="fancybox-title-inside">Figure 4: Newer line art is made in Manga Studio';
 				}
 			});
 		});

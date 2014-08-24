@@ -51,9 +51,16 @@
 				$("a[rel=example_group]").fancybox({
 				'transitionIn'		: 'none',
 				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over',
+				'titlePosition' 	: 'inside',
 				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					return "";
+					if(currentIndex == 0)
+						return '<span id="fancybox-title-inside">Figure 1: Questions generated on "The Departed" article';
+					else if(currentIndex == 1)
+						return '<span id="fancybox-title-inside">Figure 2: Answers generated on "The Departed" article';
+					else if(currentIndex == 2)
+						return '<span id="fancybox-title-inside">Figure 3: Questions generated on "Clint Dempsey" article';
+					else if(currentIndex == 3)
+						return '<span id="fancybox-title-inside">Figure 4: Answers generated on "Clint Dempsey" article';
 				}
 			});
 		});

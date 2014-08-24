@@ -51,9 +51,16 @@
 				$("a[rel=example_group]").fancybox({
 				'transitionIn'		: 'none',
 				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over',
+				'titlePosition' 	: 'inside',
 				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					return "";
+					if(currentIndex == 0)
+						return '<span id="fancybox-title-inside">Figure 1: The player is surrounded by flashing phrases of stress';
+					else if(currentIndex == 1)
+						return '<span id="fancybox-title-inside">Figure 2: The player can sit down and write code (source code of the game)';
+					else if(currentIndex == 2)
+						return '<span id="fancybox-title-inside">Figure 3: The player can also put on a coat and go explore the snowy outside';
+					else if(currentIndex == 3)
+						return '<span id="fancybox-title-inside">Figure 4: In exploration, we can see how small we really are';
 				}
 			});
 		});

@@ -51,16 +51,14 @@
 				$("a[rel=example_group]").fancybox({
 				'transitionIn'		: 'none',
 				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over',
+				'titlePosition' 	: 'inside',
 				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
 					if(currentIndex == 0)
-						return '<span id="fancybox-title-over">Figure 1: Output of a raytraced scene';
+						return '<span id="fancybox-title-inside">Figure 1: Youtube comments swirl around the dancer';
 					else if(currentIndex == 1)
-						return '<span id="fancybox-title-over">Figure 2: This demonstrates shadow ray casting';
+						return '<span id="fancybox-title-inside">Figure 2: The dance is motion captured';
 					else if(currentIndex == 2)
-						return '<span id="fancybox-title-over">Figure 3: Reflections from raytraced spheres';
-					else if(currentIndex == 3)
-						return '<span id="fancybox-title-over">Figure 4: Raytrace of the famous "Cornell Box" scene';
+						return '<span id="fancybox-title-inside">Figure 3: The dancer is overwhelmed by attacking comments';
 				}
 			});
 		});

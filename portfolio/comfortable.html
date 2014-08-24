@@ -51,9 +51,16 @@
 				$("a[rel=example_group]").fancybox({
 				'transitionIn'		: 'none',
 				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over',
+				'titlePosition' 	: 'inside',
 				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					return "";
+					if(currentIndex == 0)
+						return '<span id="fancybox-title-inside">Figure 1: CS majors at a club';
+					else if(currentIndex == 1)
+						return '<span id="fancybox-title-inside">Figure 2: CS majors discussing dating';
+					else if(currentIndex == 2)
+						return '<span id="fancybox-title-inside">Figure 3: CS majors at a school';
+					else if(currentIndex == 3)
+						return '<span id="fancybox-title-inside">Figure 4: CS majors at a beach';
 				}
 			});
 		});
