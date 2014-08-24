@@ -51,10 +51,16 @@
 				$("a[rel=example_group]").fancybox({
 				'transitionIn'		: 'none',
 				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over',
+				'titlePosition' 	: 'outside',
 				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-				
-					return '';
+					if(currentIndex == 0)
+						return '<span id="fancybox-title-outside">Figure 1: Annotation interface on the iPad';
+					else if(currentIndex == 1)
+						return '<span id="fancybox-title-outside">Figure 2: Work selection screen. The middle one is finished and can be submitted';
+					else if(currentIndex == 2)
+						return '<span id="fancybox-title-outside">Figure 3: Writing reviews at the bottom of the interface';
+					else if(currentIndex == 3)
+						return '<span id="fancybox-title-outside">Figure 4: Example of an annotated drawing';
 				}
 			});
 		});
