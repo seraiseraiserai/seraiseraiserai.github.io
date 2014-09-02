@@ -44,9 +44,16 @@
 				$("a[rel=example_group]").fancybox({
 				'transitionIn'		: 'none',
 				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over',
+				'titlePosition' 	: 'inside',
 				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+					if(currentIndex == 0)
+						return '<span id="fancybox-title-inside">Figure 1: I make noodles';
+					else if(currentIndex == 1)
+						return '<span id="fancybox-title-inside">Figure 2: current desktop setup';
+					else if(currentIndex == 2)
+						return '<span id="fancybox-title-inside">Figure 3: CS majors at a school';
+					else if(currentIndex == 3)
+						return '<span id="fancybox-title-inside">Figure 4: CS majors at a beach';
 				}
 			});
 		});
@@ -67,6 +74,7 @@
 						<li><a href='portfolio.html' title='Portfolio'>Portfolio</a></li>
 						<li><a href='resume.pdf' target="_blank" title='Resume'>Resume</a></li>
 						<li><a href='contact.html' title='Contact'>Contact</a></li>
+						<li><a href='about.html' title='About'>About</a></li>
 					</ul>
 				</div>
 			</div>
@@ -74,75 +82,39 @@
 
 		<div class='container'>
 			<div class='slogan'>
-				<div class='five columns'>
+				<div class='fourteen columns'>
 					<h1>About</h1>
+				</div>
+				<div class='five columns'>
+					<a rel="example_group" href='images/about/profile.jpg'><img src='images/about/profile.jpg' width=250></a>
 				</div>
 			</div>
 		</div>
 	</header>
 	
 	<div class='container Focus'>
-		<div class='eight columns'>
+		<div class='ten columns'>
 			<h4>Hobbies</h4>
 			<div class='clear'></div>
-
-				<p>Improvised cooking</p>
-				
-				<p>Desktop customizating</p>
-				
-				<p>Lifehacking</p>
-
-				<p>Making up BS stories that make no sense</p>
-
-				<p>Starcrafting</p>
-
-				<p>Attempted music creating</p>
-
-				<p>Wikipedia articles Reading</p>
-
-		</div>
-		
-		<div class='clear'></div>
-		<div class='clear'></div>
-		<div class='clear'></div>
-		<div class='clear'></div>
-
-		<div class='eight columns'>
-			<h4>Inspirations</h4>
+			<p>Besides drawing, coding, daydreaming, and animating, I enjoy cooking, which I see as yet another medium to create things. I am constantly experimenting with new ingredients and cooking techniques, and sometimes the output can be... interesting.
+			</p>
 			<div class='clear'></div>
-			<p>Thatgamecompany</p>
-
-			<p>Team ICO</p>
-
-			<p>Bill Watterson</p>
-
-			<p>Pope Francis</p>
+			<p>I also dump a rather shameful amount of time customizing my desktop. I relish an environment that is fully tuned to my needs, even if the time sunk into doing so is... a lot. But hey, time I enjoyed is not time I wasted.
+			</p>
 		</div>
-		
-		<div class='clear'></div>
-		<div class='clear'></div>
-		<div class='clear'></div>
-		<div class='clear'></div>
-		
-		<div class='eight columns'>
+		<div class='two columns'><br></div>
+		<div class='six columns'>
 			<h4>Favorites</h4>
 			<div class='clear'></div>
 			<p>Band: Radiohead</p>
-
 			<p>Album: Hospice, by The Antlers</p>
-
-			<p>Text Editor: Sublime Text</p>
-
-			<p>Font: Lucida Console</p>
-
+			<p>Font: Lucida Console, Open Sans</p>
 			<p>Game: Flower, by Thatgamecompany</p>
-
-			
-
-
-		<div class='clear'></div>
-		<div class='clear'></div>
 		</div>
+
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
 		
 	</div>
 	
