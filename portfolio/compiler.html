@@ -44,19 +44,26 @@
 				$("a[rel=example_group]").fancybox({
 				'transitionIn'		: 'none',
 				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over',
+				'titlePosition' 	: 'inside',
 				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-				
-					return '';
+					if(currentIndex == 0)
+						return '<span id="fancybox-title-inside">Figure 1: Landscape generation works very well';
+					else if(currentIndex == 1)
+						return '<span id="fancybox-title-inside">Figure 2: Another example. The water is a bit mangled';
+					else if(currentIndex == 2)
+						return '<span id="fancybox-title-inside">Figure 3: Generation on paintings also work very well';
+					else if(currentIndex == 3)
+						return '<span id="fancybox-title-inside">Figure 4: The algorithm is weak on generating Rihanna from Obama';
 				}
 			});
 		});
 	</script>
+
 </head>
 <body>
 
 
-	<header>			
+	<header>
 		<nav>
 			<div class='container'>
 				<div class='five columns logo'>
@@ -76,33 +83,33 @@
 
 		<div class='container'>
 			<div class='slogan'>
-				<div class='seven columns'>
+				<div class='ten columns'>
 					<h1>Compiler</h1>
-					<div class='seven columns'>
+					<div class='ten columns'>
 						<h5>TODO</h5>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
+
+	<div class='clear'></div>
+	<div class='clear'></div>
+	<div class='clear'></div>
+	<div class='clear'></div>
 	
-	<div class='clear'></div>
-	<div class='clear'></div>
-	<div class='clear'></div>
-	<div class='clear'></div>
-		
 	<div class='container Focus'>
 		<div class='seven columns'>
 			<h4>What Is It?</h4>
 			<div class='clear'></div>
 			<p>TODO
+				compiler for c0 written in Haskell
+				every 2 weeks add specs to the language, requires refactoring of entire pipeline
 			</p>
 		</div>
-		<div class='one columns'><br></div>
-		<div class='seven columns'>
-			<h4>How Is It Made?</h4>
-			<div class='clear'></div>
-			<p>TODO</p>
+		<div class='two columns'><br></div>
+		<div class='five columns'>
+			<a rel="example_group" href='../images/portfolio/Compiler1.jpg'><img src='../images/portfolio/Compiler1.jpg' height=240></a>
 		</div>
 
 		<div class='clear'></div>
@@ -110,29 +117,60 @@
 		<div class='clear'></div>
 		<div class='clear'></div>
 		<div class='clear'></div>
-
+		
+		<div class='five columns'>
+			<a rel="example_group" href='../images/portfolio/Compiler2.jpg'><img src='../images/portfolio/Compiler2.jpg' height=240></a>
+		</div>
+		<div class='two columns'><br></div>
+		<div class='seven columns'>
+			<h4>How Does It Work?</h4>
+			<div class='clear'></div>
+			<p>pipeline: parsing, elaboration, type checking, generate abstract assembly, register allocation, convert to actual assembly</p>
+		</div>
+		
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
 		
 		<div class='seven columns'>
 			<h4>What Did I Do?</h4>
 			<div class='clear'></div>
-			<p> TODO </p>
+			<p> TODO 
+				worked mostly on the first half, elaboration, static semantics.established code gen, implemented liveness analysis, and greedy graph coloring which are all part of register allocation. My partner implemented the parser, code gen, conversion from abstract assembly to actual assembly.
+			</p>
 		</div>
-		<div class='one columns'><br></div>
+		<div class='two columns'><br></div>
+		<div class='five columns'>
+			<a rel="example_group" href='../images/portfolio/Compiler3.jpg'><img src='../images/portfolio/Compiler3.jpg' height=240></a>
+		</div>
+		
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+
+		<div class='five columns'>
+			<a rel="example_group" href='../images/portfolio/Compiler4.jpg'><img src='../images/portfolio/Compiler4.jpg' height=240></a>
+		</div>
+		<div class='two columns'><br></div>
 		<div class='seven columns'>
-			<h4>What Did I Learn?</h4>  
+			<h4>What Did I Learn?</h4>
 			<div class='clear'></div>
-			<p>TODO </p>
+			<p>TODO
+				the inner workings of a compiler
+				manage large code project
+				continuously and iteratively improve upon the same code, requires large amounts of refactoring, importance of good design choices early on
+			</p>
 		</div>
 	</div>
-		
-	<div class='clear'></div>
-	<div class='clear'></div>
-	<div class='clear'></div>
-	<div class='clear'></div>
-	<div class='clear'></div>
 
+	<div class="clear"></div>
+	<div class='clear'></div>
+	<div class='clear'></div>
 	
-
 	<script type="text/javascript">
 		var toper = $('a#top');
 

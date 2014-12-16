@@ -107,7 +107,9 @@
 		<div class='seven columns'>
 			<h4>What Is It?</h4>
 			<div class='clear'></div>
-			<p>This computer program takes in a real photograph, a low budget drawing of it, and a new low budget drawing, and then generates a fourth image that shapes like the third image but has the texture of the photograph. This allows me to generate new photographs by using very simple drawings. This is an implementation of the algorithm described <a href="http://www.mrl.nyu.edu/projects/image-analogies/">here</a>.</p>
+			<p>This computer program takes in a real photograph, a simple low budget drawing of it, and a new simple drawing, and then generates a fourth image that shapes like the third image but has the texture of the photograph. This allows me to generate new photographs by using very simple drawings. This is an implementation of the algorithm described <a href="http://www.mrl.nyu.edu/projects/image-analogies/">here</a>.</p>
+			<p><br></p>
+			<p>I made it as my final project for CMU's Computational Photography class.</p>
 			<p><br></p>
 			<p>In all of the pictures, top left is actual photograph, top right is low budget drawing of it. Bottom left is a new low budget drawing, and bottom right is what my program generates.</p>
 		</div>
@@ -129,7 +131,7 @@
 		<div class='seven columns'>
 			<h4>What Is It Written In?</h4>
 			<div class='clear'></div>
-			<p>It is written in Matlab. I made it as my final project for CMU's Computational Photography class.</p>
+			<p>It is written in Matlab.</p>
 		</div>
 		
 		<div class='clear'></div>
@@ -141,7 +143,7 @@
 		<div class='seven columns'>
 			<h4>What Is the Algorithm?</h4>
 			<div class='clear'></div>
-			<p>TODO
+			<p>I loop through patches in the third image, and look for patches in the second image that are similar to it. I then get the corresponding patch in the first image, and copy it over patch by patch to the output. In order to get all patches to blend together nicely, I ran Dijkstra's Algorithm to find a minimum error cut, and use that between each pair of adjacent patches.
 			</p>
 		</div>
 		<div class='two columns'><br></div>
@@ -163,6 +165,7 @@
 			<h4>What Did I Learn?</h4>
 			<div class='clear'></div>
 			<p>TODO
+				finding my own solutions, not just following a homework spec. experimenting. no correct answers, just keep making things better.
 			</p>
 		</div>
 	</div>
