@@ -102,10 +102,7 @@
 		<div class='seven columns'>
 			<h4>What Is It?</h4>
 			<div class='clear'></div>
-			<p>TODO
-				compiler for the C0 language written in Haskell, for the Compiler Design course (15-411) at CMU.
-				works in teams of 2
-				every 2 weeks add specs to the language, requires refactoring of entire pipeline
+			<p> This is a compiler for the C0 language written in Haskell. It was my semester project for the partner-based Compiler Design course (15-411) at CMU, where every 2 weeks we had to support new specs added to the language, starting from arithmetic to control sequence, function calls, and finally structs and pointers, each of which required refactoring of entire data pipeline.
 			</p>
 		</div>
 		<div class='two columns'><br></div>
@@ -126,7 +123,8 @@
 		<div class='seven columns'>
 			<h4>How Does It Work?</h4>
 			<div class='clear'></div>
-			<p>pipeline: parsing, elaboration, type checking, generate abstract assembly, register allocation, convert to actual assembly</p>
+			<p>
+				Our compiler follows a data pipeline that converts the C0 language into multiple representations before finally outputting assembly. It starts off by parsing the C0 code into an AST, then elaborating it into a functional structure. Next, it performs type checking, and then proceeds to generate abstract assembly, on which we run register allocation. Finally, with all that data, our compiler produces actual assembly.</p>
 		</div>
 		
 		<div class='clear'></div>
@@ -138,8 +136,7 @@
 		<div class='seven columns'>
 			<h4>What Did I Do?</h4>
 			<div class='clear'></div>
-			<p> TODO 
-				worked mostly on the first half, elaboration, static semantics.established code gen, implemented liveness analysis, and greedy graph coloring which are all part of register allocation. My partner implemented the parser, code gen, conversion from abstract assembly to actual assembly.
+			<p> My main focus was on elaboration and typechecking. I also established abstract assembly generation and implemented register allocation. My partner implemented parsing, the rest of abstract assembly generation, and conversion to actual assembly.
 			</p>
 		</div>
 		<div class='two columns'><br></div>
@@ -160,10 +157,8 @@
 		<div class='seven columns'>
 			<h4>What Did I Learn?</h4>
 			<div class='clear'></div>
-			<p>TODO
-				the inner workings of a compiler
-				manage large code project
-				continuously and iteratively improve upon the same code, requires large amounts of refactoring, importance of good design choices early on
+			<p>Obviously, I learned about the inner workings of a compiler.
+				However, my most important takeaway was how to iteratively improve upon the same large codebase. Every change to the language required large amounts of code refactoring, so I learned the importance of making good design choices early on and how it percolated well into the future. This required a lot of communications and agreements between me and my partner, which we were successful at.
 			</p>
 		</div>
 	</div>
