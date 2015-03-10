@@ -14,7 +14,7 @@
 <head>
 	
 	<!-- fonts from google -->
-	<link href='http://fonts.googleapis.com/css?family=PT+Serif|PT+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif|Open+Sans' rel='stylesheet' type='text/css'>
 
 	<!-- Basic Page Needs
   ================================================== -->
@@ -38,25 +38,6 @@
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
 	<script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-	<link rel="stylesheet" type="text/css" href="../js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
-	<script type="text/javascript">
-
-		$('a.more').on('click', function(event) {
-		    event.preventDefault();
-		    $.fancybox({
-		        'type' : 'iframe',
-		        // hide the related video suggestions and autoplay the video
-		        'href' : this.href.replace(new RegExp('watch\\?v=', 'i'), 'embed/') + '?rel=0&autoplay=1',
-		        'overlayShow' : true,
-		        'centerOnScroll' : true,
-		        'speedIn' : 100,
-		        'speedOut' : 50,
-		        'width' : 640,
-		        'height' : 480
-    });
-});
-	</script>
-
 </head>
 
 
@@ -65,10 +46,10 @@
 		<nav>
 			<div class='container'>
 				<div class='five columns logo'>
-					<a href='../index.html'>Dave Yan</a>
+					<a href='../index.html'>DAVE YAN</a>
 				</div>
 
-				<div class='ten columns'>
+				<div class='three columns offset-by-seven'>
 					<ul class='mainMenu'>
 						<li><a href='../daveYanResume.pdf' target="_blank" title='Resume'>Resume</a></li>
 						<li><a href='../about.html' title='About'>About</a></li>
@@ -78,7 +59,7 @@
 		</nav>
 
 		<div class='container'>
-			<div class='fifteen columns'>
+			<div class='fifteen columns' align="center">
 				<div class='clear'></div>
 				<img class="center fit" src="../images/portfolio/deerhunter1.jpg" >
 			</div>
@@ -113,9 +94,13 @@
 		</div>
 		<div class='clear'></div>
 		<div class='clear'></div>
-		<div class='fifteen columns'>
-				<iframe width="880" height='500'
+		<div class='fifteen columns' align='center'>
+				<!--iframe width="100" height='500' 
 				 src="http://www.youtube.com/embed/p25iJxEQAxA">
+				</iframe-->
+
+				<iframe width="100%" height="500"
+					src="http://www.youtube.com/embed/p25iJxEQAxA">
 				</iframe>
 		</div>
 		<div class="fifteen columns" align="center">
@@ -127,6 +112,7 @@
 
 		<div class='clear'></div>
 		<div class='clear'></div>
+		<div class='clear'></div>
 
 
 		<div class='eleven columns offset-by-two'>
@@ -135,7 +121,7 @@
 		</div>
 		<div class='clear'></div>
 		<div class='clear'></div>
-		<div class='fifteen columns'>
+		<div class='fifteen columns' align="center">
 			<img class="center fit" src="../images/portfolio/deerhunter2.jpg" >
 		</div>
 		<div class="fifteen columns" align="center">
@@ -146,6 +132,7 @@
 		
 		<div class='clear'></div>
 		<div class='clear'></div>
+		<div class='clear'></div>
 		
 
 		<div class='eleven columns offset-by-two'>
@@ -154,7 +141,7 @@
 		</div>
 		<div class='clear'></div>
 		<div class='clear'></div>
-		<div class='fifteen columns'>
+		<div class='fifteen columns' align="center">
 			<img class="center fit" src="../images/portfolio/deerhunter3.jpg" >
 		</div>
 		<div class="fifteen columns" align="center">
@@ -165,6 +152,7 @@
 		
 
 
+		<div class='clear'></div>
 		<div class='clear'></div>
 		<div class='clear'></div>
 
@@ -181,16 +169,5 @@
 		<h2><a href="https://github.com/fdu5526/deerhunter" target="_blank" class='dalej'>Github Repository</a></h2>
 		</a>
 	</div>	
-	
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script type="text/javascript" language="JavaScript">
-  function set_body_height() { // set body height = window height
-    $('body').height($(window).height());
-  }
-  $(document).ready(function() {
-    $(window).bind('resize', set_body_height);
-    set_body_height();
-  });
-</script>
 </body>
 </html>
