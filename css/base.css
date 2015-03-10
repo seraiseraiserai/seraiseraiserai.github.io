@@ -32,7 +32,7 @@ a, a:visited {text-decoration: none; color: #484848;}
 */
 h1 {font-family: "PT Serif", serif;}
 h2 {font-size: 13px; font-family: 'Open Sans', sans-serif; }
-h3 {font-size: 30px; font-family: 'PT Serif', serif; font-weight: 400; padding: 20px 0; text-align:left}
+h3 {font-size: 28px; font-family: 'PT Serif', serif; font-weight: 400; padding: 20px 0; text-align:left}
 h4 {font-size: 18px; font-family: 'PT Serif' serif;}
 h5 {font-size: 12px; font-family: 'PT Serif' serif; padding-bottom: 10px;}
 h6 {font-size: 8px; padding-bottom: 10px; font-weight: bold;}
@@ -71,7 +71,7 @@ header .slogan a.green {margin: 13px 0; padding: 10px 28px;}
 header p {color: #484848;}
 header h1, header h2, header h4, header h5 {width: 100%; float: left; clear: both;  text-align: left; color: #484848; font-weight: 300;}
 header h1 {font-size: 4em; margin-bottom: 10px;}
-header h2 {font-size: 1.5em;}
+header h2 {font-size: 1.4em;}
 header h4 {font-weight: normal; margin-bottom: 10px;}
 
 
@@ -105,9 +105,6 @@ ul.mainMenu li a:hover {color: #AED4F0;
     -o-transition: color .2s ease-in-out;
     transition: color .2s ease-in-out;
 }
-
-
-
 
 
 
@@ -259,10 +256,11 @@ footer .social a:hover img {opacity: 1;}
 *  ------------------- */
 @media only screen and (max-width: 767px) and (min-width: 480px) {
 
-	header h2 {display: none;}
 	header .slogan {padding-top: 40px;}
 
-	nav .container .logo {margin-bottom: 20px; text-align: center;}
+  header nav { height: 60px; }
+	nav .container .logo {margin-bottom: 10px;}
+  
 
 	.orange p {width: 400px;}
 
@@ -278,11 +276,11 @@ footer .social a:hover img {opacity: 1;}
 @media only screen and (max-width: 767px) {
 
 	header {height: 310px;}
-	header h2, header .six.columns {display: none;}
 	header .slogan {padding: 30px 0;}
+  header nav { height: 60px; }
 
 
-	nav .container .logo {margin-bottom: px; text-align: center;}
+	nav .container .logo {margin-bottom: 10px;}
 
 	.orange p {width: 200px;}
 
@@ -296,6 +294,8 @@ footer .social a:hover img {opacity: 1;}
 }
 
 
+
+/** horizontal line */
 hr {
    display: block;
    position: relative;
@@ -349,6 +349,8 @@ hr {
 }
 
 
+
+/** scalable images in all portfolio entries */
 * {
     padding: 0;
     margin: 0;
