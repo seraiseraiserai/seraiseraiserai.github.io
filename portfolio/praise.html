@@ -5,7 +5,6 @@
 <!-- =          http://keyners.com/	               = -->
 <!-- =============================================== -->
 
-
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -14,7 +13,7 @@
 <head>
 	
 	<!-- fonts from google -->
-	<link href='http://fonts.googleapis.com/css?family=Lato|Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif|Open+Sans' rel='stylesheet' type='text/css'>
 
 	<!-- Basic Page Needs
   ================================================== -->
@@ -35,150 +34,140 @@
 	<link rel="stylesheet" href="../css/skeleton.css">
 	<link rel="stylesheet" href="../css/layout.css">
 	<link rel="icon" type="image/png" href="../images/favicon.png">
-	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-	<script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-	<link rel="stylesheet" type="text/css" href="../js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
-	<script type="text/javascript">
-		$(document).ready(function() {
-				$("a[rel=example_group]").fancybox({
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'titlePosition' 	: 'inside',
-				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					if(currentIndex == 0)
-						return '<span id="fancybox-title-inside">Figure 1: Annotation interface on the iPad';
-					else if(currentIndex == 1)
-						return '<span id="fancybox-title-inside">Figure 2: Work selection screen. The middle one is finished and can be submitted';
-					else if(currentIndex == 2)
-						return '<span id="fancybox-title-inside">Figure 3: Writing reviews at the bottom of the interface';
-					else if(currentIndex == 3)
-						return '<span id="fancybox-title-inside">Figure 4: Example of an annotated drawing';
-				}
-			});
-		});
-	</script>
+
 </head>
+
+
 <body>
-
-
-	<header>			
+	<header>
 		<nav>
 			<div class='container'>
 				<div class='five columns logo'>
 					<a href='../index.html'>DAVE YAN</a>
 				</div>
 
-				<div class='ten columns'>
 					<ul class='mainMenu'>
 						<li><a href='../daveYanResume.pdf' target="_blank" title='Resume'>Resume</a></li>
 						<li><a href='../about.html' title='About'>About</a></li>
 					</ul>
-				</div>
 			</div>
 		</nav>
 
 		<div class='container'>
-			<div class='slogan'>
-				<div class='ten columns'>
-					<h1>PRAISE</h1>
-					<div class='ten columns'>
-						<h5>iPad App for Art Critiques</h5>
-					</div>
-				</div>
+			<div class="sixteen columns">
+  			<div class="eight columns offset-by-six">
+  				<div class='clear'></div>
+  				<div class='clear'></div>
+      		<h1>PRAISE</h1>
+      		<div class='clear'></div>
+      	</div>
+      	<div class="eight columns offset-by-five">
+      		<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iPad App for Art Critiques</h2>
+  			</div>
 			</div>
+			<div class='clear'></div>
+			<hr>
 		</div>
 	</header>
 
-	<div class='clear'></div>
-	<div class='clear'></div>
-	<div class='clear'></div>
-	<div class='clear'></div>
+
 	
+	<div class='clear'></div>
+	<div class='clear'></div>
+	<div class='clear'></div>
+	<div class='clear'></div>
+
 	<div class='container Focus'>
-		<div class='seven columns'>
-			<h4>What Is It?</h4>
-			<div class='clear'></div>
-			<p>PRAISE allows art students in Japan with hearing disabilities to peer review each other's works via an iPad app. Students can review, rate, and annotate aspects of drawings. It is my research project for CMU's Human Computer Interaction Institute that I started in January 2013 and continues to today.</p>
+		
+		
+		<div class='eleven columns offset-by-two'>
+			<h3>What Is It?</h3>
+			<p>PRAISE allows art students in Japan with hearing disabilities to peer review each other's works via an iPad app. Students can review, rate, and annotate aspects of drawings. It is my research project for CMU's Human Computer Interaction Institute that I started in January 2013 and continues to today.
+			</p>
 		</div>
-		<div class="three columns"><br></div>
-		<div class='five columns'>
-			<a rel="example_group" href='../images/portfolio/praise1.jpg'><img src='../images/portfolio/praise1.jpg' height=300></a>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='fifteen columns' align='center'>
+			<img class="center fit" src="../images/portfolio/praise1.jpg" width="60%">
 		</div>
+		<div class="fifteen columns" align="center">
+			<br></br>
+			<h8>Annotation interface on the iPad
+			</h8>
+		</div>
+		
 
-		<div class='clear'></div>
-		<div class='clear'></div>
-		<div class='clear'></div>
-		<div class='clear'></div>
-		<div class='clear'></div>
-	
-
-		<div class='five columns'>
-			<a rel="example_group" href='../images/portfolio/praise2.jpg'><img src='../images/portfolio/praise2.jpg' height=300></a>
-		</div>
-		<div class="three columns"><br></div>
-		<div class='seven columns'>
-			<h4>What Is It Written In?</h4>
-			<div class='clear'></div>
-			<p>The iPad app is written in Objective-C. The backend server is written in Python, and the frontend of the server for teachers is written in Actionscript and MXML.</p>
-		</div>
-
-		<div class='clear'></div>
-		<div class='clear'></div>
 		<div class='clear'></div>
 		<div class='clear'></div>
 		<div class='clear'></div>
 
 
-		<div class='seven columns'>
-			<h4>What Did I Do?</h4>
-			<div class='clear'></div>
-			<p>I first designed the user interface of the app, starting from brainstorming to paper prototyping and finalization using an iterative process. Then I implemented the finalized design. At the same time, I improved the backend of the app and the server it uses to be more reliable and robust with more features, such as a deadline system. Finally, I revamped the documentation and setup process to be much more streamlined for teachers.</p>
+		<div class='eleven columns offset-by-two'>
+			<h3>What Is It Written In?</h3>
+			<p>The iPad app is written in Objective-C. The backend server is written in Python, and the frontend of the server for teachers is written in Actionscript and MXML.
+			</p>
 		</div>
-		<div class='three columns'><br></div>
-		<div class='five columns'>
-			<a rel="example_group" href='../images/portfolio/praise3.jpg'><img src='../images/portfolio/praise3.jpg' height=300></a>
-		</div>
-
 		<div class='clear'></div>
 		<div class='clear'></div>
+		<div class='fifteen columns' align="center">
+			<img class="center fit" src="../images/portfolio/praise2.jpg" width="60%">
+		</div>
+		<div class="fifteen columns" align="center">
+    	<br></br>
+      <h8>Work selection screen. The middle one is finished and can be submitted
+			</h8>
+		</div>
+		
 		<div class='clear'></div>
 		<div class='clear'></div>
 		<div class='clear'></div>
 		
-		<div class='five columns'>
-			<a rel="example_group" href='../images/portfolio/praise4.jpg'><img src='../images/portfolio/praise4.jpg' height=300></a>
+
+		<div class='eleven columns offset-by-two'>
+			<h3>What Did I Do?</h3>
+			<p>I first designed the user interface of the app, starting from brainstorming to paper prototyping and finalization using an iterative process. Then I implemented the finalized design. At the same time, I improved the backend of the app and the server it uses to be more reliable and robust with more features, such as a deadline system. Finally, I revamped the documentation and setup process to be much more streamlined for teachers.</p>
 		</div>
-		<div class='three columns'><br></div>
-		<div class='seven columns'>
-			<h4>What Did I Learn?</h4>
-			<div class='clear'></div>
-			<p>I learned user interface design processes such as paper prototyping, iOS development and communication between programs via network. I also learned how to use Mac OS X, Xcode, and Flash Builder. Thirdly, I learned about the difficulty of communicating with groups across language barriers (I do not know Japanese) and the importance of documentation and instructions for people who are not the most proficient at computers.</p>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='fifteen columns' align="center">
+			<img class="center fit" src="../images/portfolio/praise3.jpg" width="60%">
 		</div>
+		<div class="fifteen columns" align="center">
+    	<br></br>
+      <h8>Writing reviews at the bottom of the interface
+			</h8>
+	  </div>
+		
+
+
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+
+
+
+		<div class='eleven columns offset-by-two'>
+			<h3>What Did I Learn?</h3>
+			<p>I learned user interface design processes such as paper prototyping, iOS development and communication between programs via network. I also learned how to use Mac OS X, Xcode, and Flash Builder. Thirdly, I learned about the difficulty of communicating with groups across language barriers (I do not know Japanese) and the importance of documentation and instructions for people who are not the most proficient at computers.
+			</p>
+		</div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='fifteen columns' align="center">
+			<img class="center fit" src="../images/portfolio/praise4.jpg" width="60%">
+		</div>
+		<div class="fifteen columns" align="center">
+    	<br></br>
+      <h8>Example of an annotated drawing
+			</h8>
+	  </div>
+	  <div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
 	</div>
-	
-	<div class="clear"></div>
-	<div class='clear'></div>
-	<div class='clear'></div>
-	<div class='clear'></div>
-	<div class='clear'></div>
-	
-	<script type="text/javascript">
-		var toper = $('a#top');
 
-
-		$(window).scroll(function(){
-            if ($(this).scrollTop() > 100) {
-                toper.fadeIn( 200 );
-            } else {
-                toper.fadeOut( 200 );
-            }
-        });
-
-         toper.click(function(){
-        	$('html, body').animate({scrollTop:0}, 500);	        	
-        	return false;
-    	}); 
-	</script>
 </body>
 </html>
