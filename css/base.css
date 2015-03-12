@@ -30,14 +30,14 @@ a, a:visited {text-decoration: none; color: #484848;}
 /*
 * Headings
 */
-h1 {font-family: "PT Serif", serif;}
+h1 {font-family: "Lato",sans-serif;}
 h2 {font-size: 13px; font-family: 'Open Sans', sans-serif; }
-h3 {font-size: 28px; font-family: 'PT Serif', serif; font-weight: 400; padding: 20px 0; text-align:left}
-h4 {font-size: 18px; font-family: 'PT Serif' serif;}
-h5 {font-size: 12px; font-family: 'PT Serif' serif; padding-bottom: 10px;}
+h3 {font-size: 28px; font-family: 'Lato',sans-serif; font-weight: 400; padding: 20px 0; text-align:left}
+h4 {font-size: 18px; font-family: 'Lato'sans-serif;}
+h5 {font-size: 12px; font-family: 'Lato'sans-serif; padding-bottom: 10px;}
 h6 {font-size: 8px; padding-bottom: 10px; font-weight: bold;}
 h5 b {font-weight: bold;}
-h7 {font-size: 11px; font-family: 'PT Serif', serif; font-weight: 400; padding: 20px 0;}
+h7 {font-size: 11px; font-family: 'Lato',sans-serif; font-weight: 400; padding: 20px 0;}
 h8 {font-size: 14px; font-family: 'Open Sans', sans-serif; font-weight: 400; padding: 20px 0;}
 
 /*
@@ -73,6 +73,8 @@ header h1, header h2, header h4, header h5 {width: 100%; float: left; clear: bot
 header h1 {font-size: 4em; margin-bottom: 10px;}
 header h2 {font-size: 1.4em;}
 header h4 {font-weight: normal; margin-bottom: 10px;}
+header h7 {font-size: 3em; margin-bottom: 10px;}
+header h8 {font-size: 1.5em; margin-bottom: 10px;}
 
 
 	
