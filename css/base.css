@@ -30,14 +30,14 @@ a, a:visited {text-decoration: none; color: #484848;}
 /*
 * Headings
 */
-h1 {font-family: "Lato",sans-serif;}
+h1 {font-family: "Oxygen",sans-serif;}
 h2 {font-size: 13px; font-family: 'Open Sans', sans-serif; }
-h3 {font-size: 28px; font-family: 'Lato',sans-serif; font-weight: 400; padding: 20px 0; text-align:left}
-h4 {font-size: 18px; font-family: 'Lato'sans-serif;}
-h5 {font-size: 12px; font-family: 'Lato'sans-serif; padding-bottom: 10px;}
+h3 {font-size: 28px; font-family: 'Oxygen',sans-serif; font-weight: 400; padding: 20px 0; text-align:left}
+h4 {font-size: 18px; font-family: 'Oxygen'sans-serif;}
+h5 {font-size: 12px; font-family: 'Oxygen'sans-serif; padding-bottom: 10px;}
 h6 {font-size: 8px; padding-bottom: 10px; font-weight: bold;}
 h5 b {font-weight: bold;}
-h7 {font-size: 11px; font-family: 'Lato',sans-serif; font-weight: 400; padding: 20px 0;}
+h7 {font-size: 11px; font-family: 'Oxygen',sans-serif; font-weight: 400; padding: 20px 0;}
 h8 {font-size: 14px; font-family: 'Open Sans', sans-serif; font-weight: 400; padding: 20px 0;}
 
 /*
