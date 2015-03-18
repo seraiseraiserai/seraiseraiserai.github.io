@@ -5,7 +5,6 @@
 <!-- =          http://keyners.com/	               = -->
 <!-- =============================================== -->
 
-
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -14,7 +13,7 @@
 <head>
 	
 	<!-- fonts from google -->
-	<link href='http://fonts.googleapis.com/css?family=Lato|Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oxygen|Open+Sans' rel='stylesheet' type='text/css'>
 
 	<!-- Basic Page Needs
   ================================================== -->
@@ -35,159 +34,138 @@
 	<link rel="stylesheet" href="../css/skeleton.css">
 	<link rel="stylesheet" href="../css/layout.css">
 	<link rel="icon" type="image/png" href="../images/favicon.png">
-	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-	<script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-	<link rel="stylesheet" type="text/css" href="../js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
-	<script type="text/javascript">
-		$(document).ready(function() {
-				$("a[rel=example_group]").fancybox({
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'titlePosition' 	: 'inside',
-				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					if(currentIndex == 0)
-						return '<span id="fancybox-title-inside">Figure 1: Questions generated on "The Departed" article';
-					else if(currentIndex == 1)
-						return '<span id="fancybox-title-inside">Figure 2: Answers generated on "The Departed" article';
-					else if(currentIndex == 2)
-						return '<span id="fancybox-title-inside">Figure 3: Questions generated on "Clint Dempsey" article';
-					else if(currentIndex == 3)
-						return '<span id="fancybox-title-inside">Figure 4: Answers generated on "Clint Dempsey" article';
-				}
-			});
-		});
-	</script>
 
 </head>
+
+
 <body>
-
-
 	<header>
 		<nav>
 			<div class='container'>
 				<div class='five columns logo'>
-					<a href='../index.html'>Dave Yan</a>
+					<a href='../index.html'>DAVE YAN</a>
 				</div>
 
-				<div class='ten columns'>
 					<ul class='mainMenu'>
-						<li><a href='../portfolio.html' title='Portfolio'>Portfolio</a></li>
 						<li><a href='../daveYanResume.pdf' target="_blank" title='Resume'>Resume</a></li>
-						<li><a href='../contact.html' title='Contact'>Contact</a></li>
-						<li><a href='about.html' title='About'>About</a></li>
+						<li><a href='../about.html' title='About'>About</a></li>
 					</ul>
-				</div>
 			</div>
 		</nav>
 
 		<div class='container'>
-			<div class='slogan'>
-				<div class='ten columns'>
-					<h1>Sweet Potato</h1>
-					<div class='ten columns'>
-						<h5>Asks and Answers Questions On Wikipedia Articles</h5>
-					</div>
-				</div>
+			<div class="sixteen columns">
+  			<div class="eight columns offset-by-five">
+  				<div class='clear'></div>
+  				<div class='clear'></div>
+      		<h1>Sweet Potato</h1>
+      		<div class='clear'></div>
+      	</div>
+      	<div class="eight columns offset-by-four">
+      		<h2>&nbsp;&nbsp;&nbsp;Asks and Answers Questions On Wikipedia Articles</h2>
+  			</div>
 			</div>
+			<div class='clear'></div>
+			<hr>
 		</div>
 	</header>
 
-	<div class='clear'></div>
-	<div class='clear'></div>
-	<div class='clear'></div>
-	<div class='clear'></div>
+
 	
+	<div class='clear'></div>
+	<div class='clear'></div>
+	<div class='clear'></div>
+	<div class='clear'></div>
+
 	<div class='container Focus'>
-		<div class='eight columns'>
-			<h4>What Is It?</h4>
-			<div class='clear'></div>
+		
+		
+		<div class='eleven columns offset-by-two'>
+			<h3>What Is It?</h3>
 			<p>Sweet Potato is our group's (3 people total) submission for CMU's Natural Language Processing course's semester-long project. Our program reads in Wikipedia articles, generates human-readable questions on them, and produces answers to these questions. It then competes with those of others in a battle for supremacy.</p>
 			<h5></h5>
 			<p>The name "Sweet Potato" is just something random we came up with for the name of our repository, nothing more.</p>
 		</div>
-		<div class='one columns'><br></div>
-		<div class='five columns'>
-			<a rel="example_group" href='../images/portfolio/sweetpotato1.jpg'><img src='../images/portfolio/sweetpotato1.jpg' width=300></a>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='fifteen columns' align='center'>
+			<img class="center fit" src="../images/portfolio/sweetpotato1.jpg" style="border:1px solid black;">
 		</div>
-
-		<div class='clear'></div>
-		<div class='clear'></div>
-		<div class='clear'></div>
-		<div class='clear'></div>
-		<div class='clear'></div>
-
-
-		<div class='seven columns'>
-			<a rel="example_group" href='../images/portfolio/sweetpotato2.jpg'><img src='../images/portfolio/sweetpotato2.jpg' width=300></a>
+		<div class="fifteen columns" align="center">
+			<br></br>
+			<h8>Questions generated on "The Departed" article
+			</h8>
 		</div>
-		<div class='four columns'><br></div>
-		<div class='eight columns'>
-			<h4>How Is It Made?</h4>
-			<div class='clear'></div>
-			<p>We used multiple languages and APIs in our development. For our question generator, we used Java, based on the Stanford CoreNLP parser, to break down and rearrange sentences to overgenerate questions. Next, we pass the output to Python, which uses the SKLearn package to rank questions via SVM, and pick the best ones. For our question answerer, we once again used StanfordCoreNLP to first resolve pronouns, and we also feed the output into Python, which tokenizes via NLTK and runs an algorithm that is based on weighted TF/IDF.</p>
+		
+
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+
+
+		<div class='eleven columns offset-by-two'>
+			<h3>How Is It Made?</h3>
+			<p>We used multiple languages and APIs in our development. For our question generator, we used Java, based on the Stanford CoreNLP parser, to break down and rearrange sentences to overgenerate questions. Next, we pass the output to Python, which uses the SKLearn package to rank questions via SVM, and pick the best ones. For our question answerer, we once again used StanfordCoreNLP to first resolve pronouns, and we also feed the output into Python, which tokenizes via NLTK and runs an algorithm that is based on weighted TF/IDF.
+			</p>
+		</div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='fifteen columns' align="center">
+			<img class="center fit" src="../images/portfolio/sweetpotato2.jpg" style="border:1px solid black;">
+		</div>
+		<div class="fifteen columns" align="center">
+    	<br></br>
+      <h8>Answers generated on "The Departed" article
+			</h8>
 		</div>
 		
 		<div class='clear'></div>
 		<div class='clear'></div>
 		<div class='clear'></div>
-		<div class='clear'></div>
-		<div class='clear'></div>
 		
-		<div class='eight columns'>
-			<h4>What Did I Do?</h4>
-			<div class='clear'></div>
-			<p>I focused on the Java area of our code, working closely with the Stanford CoreNLP library. First of this is the question overgenerator, which I included multiple ways to trick and mislead other teams' answerers, such as switching pronouns. I also made a pronoun resolver, since answers with pronouns in them are generally nonsensical. Our question generator produced the 3rd hardest question sets out of the 25 groups, where over half of the answers were incorrect. </p>
+
+		<div class='eleven columns offset-by-two'>
+			<h3>What Did I Do?</h3>
+			<p>I focused on the Java area of our code, working closely with the Stanford CoreNLP library. First of this is the question overgenerator, which I included multiple ways to trick and mislead other teams' answerers, such as switching pronouns. I also made a pronoun resolver, since answers with pronouns in them are generally nonsensical. Our question generator produced the 3rd hardest question sets out of the 25 groups, where over half of the answers were incorrect.</p>
 		</div>
-		<div class='one columns'><br></div>
-		<div class='five columns'>
-			<a rel="example_group" href='../images/portfolio/sweetpotato3.jpg'><img src='../images/portfolio/sweetpotato3.jpg' width=300></a>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='fifteen columns' align="center">
+			<img class="center fit" src="../images/portfolio/sweetpotato3.jpg" style="border:1px solid black;">
 		</div>
+		<div class="fifteen columns" align="center">
+    	<br></br>
+      <h8>Questions generated on "Clint Dempsey" article
+			</h8>
+	  </div>
 		
-		<div class='clear'></div>
-		<div class='clear'></div>
+
+
 		<div class='clear'></div>
 		<div class='clear'></div>
 		<div class='clear'></div>
 
 
-		<div class='seven columns'>
-			<a rel="example_group" href='../images/portfolio/sweetpotato4.jpg'><img src='../images/portfolio/sweetpotato4.jpg' width=300></a>
+
+		<div class='eleven columns offset-by-two'>
+			<h3>What Did I Learn?</h3>
+			<p>Besides applications of natural language processing algorithms, I learned techniques of agile development. I also realized that English is a language with many edge cases, which caused me to experiment heavily with my code, sometimes throwing away hundreds of lines of progress, in order to achieve desirable results. I am not afraid of hacking, failing, or restarting to get things done.
+			</p>
 		</div>
-		<div class='four columns'><br></div>
-		<div class='eight columns'>
-			<h4>What Did I Learn?</h4>
-			<div class='clear'></div>
-			<p>Besides applications of natural language processing algorithms, I learned techniques of agile development. I also realized that English is a language with many edge cases, which caused me to experiment heavily with my code, sometimes throwing away hundreds of lines of progress, in order to achieve desirable results. I am not afraid of hacking, failing, or restarting to get things done.</p>
+		<div class='clear'></div>
+		<div class='fifteen columns' align="center">
+			<img class="center fit" src="../images/portfolio/sweetpotato4.jpg" style="border:1px solid black;" >
 		</div>
+		<div class="fifteen columns" align="center">
+    	<br></br>
+      <h8>Answers generated on "Clint Dempsey" article
+			</h8>
+	  </div>
 	</div>
-	
-		<div class="white">
-		<h1><a href="https://github.com/fdu5526/NLP_sweetPotato" target="_blank" class='dalej'>Github Repository</a></h1>
+
+	<div class="white">
+		<h2><a href="https://github.com/fdu5526/NLP_sweetPotato" target="_blank" class='dalej'>Github Repository</a></h2>
 		</a>
-	</div>
-
-
-	<div class="clear"></div>
-	<div class='clear'></div>
-	<div class='clear'></div>
-	
-	<script type="text/javascript">
-		var toper = $('a#top');
-
-
-		$(window).scroll(function(){
-            if ($(this).scrollTop() > 100) {
-                toper.fadeIn( 200 );
-            } else {
-                toper.fadeOut( 200 );
-            }
-        });
-
-         toper.click(function(){
-        	$('html, body').animate({scrollTop:0}, 500);	        	
-        	return false;
-    	}); 
-	</script>
+	</div>	
 </body>
 </html>

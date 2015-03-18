@@ -5,7 +5,6 @@
 <!-- =          http://keyners.com/	               = -->
 <!-- =============================================== -->
 
-
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -14,7 +13,7 @@
 <head>
 	
 	<!-- fonts from google -->
-	<link href='http://fonts.googleapis.com/css?family=Lato|Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oxygen|Open+Sans' rel='stylesheet' type='text/css'>
 
 	<!-- Basic Page Needs
   ================================================== -->
@@ -35,66 +34,54 @@
 	<link rel="stylesheet" href="../css/skeleton.css">
 	<link rel="stylesheet" href="../css/layout.css">
 	<link rel="icon" type="image/png" href="../images/favicon.png">
-	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-	<script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-	<link rel="stylesheet" type="text/css" href="../js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
-	<script type="text/javascript">
-		$(document).ready(function() {
-				$("a[rel=example_group]").fancybox({
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over',
-				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-				
-					return '';
-				}
-			});
-		});
-	</script>
+
 </head>
+
+
 <body>
-
-
-	<header>			
+	<header>
 		<nav>
 			<div class='container'>
 				<div class='five columns logo'>
-					<a href='../index.html'>Dave Yan</a>
+					<a href='../index.html'>DAVE YAN</a>
 				</div>
 
-				<div class='ten columns'>
 					<ul class='mainMenu'>
-						<li><a href='../portfolio.html' title='Portfolio'>Portfolio</a></li>
 						<li><a href='../daveYanResume.pdf' target="_blank" title='Resume'>Resume</a></li>
-						<li><a href='../contact.html' title='Contact'>Contact</a></li>
-						<li><a href='about.html' title='About'>About</a></li>
+						<li><a href='../about.html' title='About'>About</a></li>
 					</ul>
-				</div>
 			</div>
 		</nav>
 
 		<div class='container'>
-			<div class='slogan'>
-				<div class='seven columns'>
-					<h1>Eye Tracking</h1>
-					<div class='seven columns'>
-						<h5>Know Where People Look During Usability Studies</h5>
-					</div>
-				</div>
+			<div class="sixteen columns">
+  			<div class="eight columns offset-by-five">
+  				<div class='clear'></div>
+  				<div class='clear'></div>
+      		<h1>Eye Tracking</h1>
+      		<div class='clear'></div>
+      	</div>
+      	<div class="eight columns offset-by-four">
+      		<h2>&nbsp;&nbsp;&nbsp;Know Where People Look During Usability Studies</h2>
+  			</div>
 			</div>
+			<div class='clear'></div>
+			<hr>
 		</div>
 	</header>
+
+
 	
 	<div class='clear'></div>
 	<div class='clear'></div>
 	<div class='clear'></div>
 	<div class='clear'></div>
-		
+
 	<div class='container Focus'>
-		<div class='seven columns'>
-			<h4>What Is It?</h4>
-			<div class='clear'></div>
+		
+		
+		<div class='eleven columns offset-by-two'>
+			<h3>What Is It?</h3>
 			<p>Eye Tracking is my intern project at Epic Systems in the summer of 2014. It is a desktop (Windows) application with 3 parts: </p>
 
 			<br>
@@ -112,80 +99,67 @@
 				Eyetracking usability studies are similar to standard usability studies, but with the additionality of recording where participants look on screen.
 			</p>
 		</div>
-		<div class='one columns'><br></div>
-		<div class='seven columns'>
-			<h4>What Is the Motive?</h4>
-			<div class='clear'></div>
-			<p>
-				The purpose of this project is to provide an affordable and accessible alternative to the Tobii suite, which costs $30,000 per unit. We used another device called The Eye Tribe which only costs $100, but does not come with its own software, hence why we have to create our own.
-			</p>
-		</div>
-
 		<div class='clear'></div>
 		<div class='clear'></div>
 		<div class='clear'></div>
 		<div class='clear'></div>
 		<div class='clear'></div>
 
-		<div class='seven columns'>
-			<h4>How Is It Made?</h4>
-			<div class='clear'></div>
-			<p>We started off with only The Eye Tribe's API reference, and built up the rest of the application from scratch. We used C# for the bulk of our application, WPF for the frontend, and SQL for data storage. We used Visual Studio and SQL Management Studio.</p>
-		</div>
-		<div class='one columns'><br></div>
-		<div class='seven columns'>
-			<h4>What Did I Do?</h4>
-			<div class='clear'></div>
-			<p> 
-				I worked with one other person on this project. We were given a large control, so we got to decide on exactly what and how to make our software. To achieve this, first I extensively researched the applications and weaknesses of eyetracking studies, and how to analyze data collected from them. Next, I designed and wrote the backbone data structures, and created APIs to interact with them. Thirdly, I created visualizations for the data collected. Fourthly, I designed the SQL database and wrote the data access layer which interacts with it. I also helped my teammate brainstorm and design the GUI while she wrote it. Finally, we conducted usability studies with our software in actual test environments.
+
+		<div class='eleven columns offset-by-two'>
+			<h3>What Is the Motive?</h3>
+			<p>The purpose of this project is to provide an affordable and accessible alternative to the Tobii suite, which costs $30,000 per unit. We used another device called The Eye Tribe which only costs $100, but does not come with its own software, hence why we have to create our own.
 			</p>
 		</div>
-		
 		<div class='clear'></div>
 		<div class='clear'></div>
 		<div class='clear'></div>
 		<div class='clear'></div>
 		<div class='clear'></div>
 
-		<div class='seven columns'>
-			<h4>What Did I Learn?</h4>  
-			<div class='clear'></div>
-			<p>
-				First of all, I learned much about usability testing, especially those pertaining to eyetracking. I also learned C# and SQL. However, what is most important is that this is my first experience building a large application from the ground up. Structuring large amounts of code in a meaningful way that does not confuse my teammate required a lot of thought (since she uses my API). Any change I make could break everything, so getting the structure right is paramount. I also learned a lot from working with my teammate. We communicated constantly to make the best decisions, and to make sure everyone understood the flow of the entire software.
+		<div class='eleven columns offset-by-two'>
+			<h3>How Is It Made?</h3>
+			<p>We started off with only The Eye Tribe's API reference, and built up the rest of the application from scratch. We used C# for the bulk of our application, WPF for the frontend, and SQL for data storage. We used Visual Studio and SQL Management Studio.
 			</p>
 		</div>
-		<div class='one columns'><br></div>
-		<div class='seven columns'>
-			<h4>Screenshots?</h4>  
-			<div class='clear'></div>
-			<p>
-				No screenshots of our application can be shown due to legal reasons. The thumbnail in the portfolio (green eyes) is from theyetribe.com, which is the website of the hardware and API that we used for this project.
-			</p>
-		</div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
 
+		<div class='eleven columns offset-by-two'>
+			<h3>What Did I Do?</h3>
+			<p>I worked with one other person on this project. We were given a large control, so we got to decide on exactly what and how to make our software. To achieve this, first I extensively researched the applications and weaknesses of eyetracking studies, and how to analyze data collected from them. Next, I designed and wrote the backbone data structures, and created APIs to interact with them. Thirdly, I created visualizations for the data collected. Fourthly, I designed the SQL database and wrote the data access layer which interacts with it. I also helped my teammate brainstorm and design the GUI while she wrote it. Finally, we conducted usability studies with our software in actual test environments.
+			</p>
+		</div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+
+		<div class='eleven columns offset-by-two'>
+			<h3>What Did I Learn?</h3>
+			<p>First of all, I learned much about usability testing, especially those pertaining to eyetracking. I also learned C# and SQL. However, what is most important is that this is my first experience building a large application from the ground up. Structuring large amounts of code in a meaningful way that does not confuse my teammate required a lot of thought (since she uses my API). Any change I make could break everything, so getting the structure right is paramount. I also learned a lot from working with my teammate. We communicated constantly to make the best decisions, and to make sure everyone understood the flow of the entire software.
+			</p>
+		</div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+
+		<div class='eleven columns offset-by-two'>
+			<h3>Screenshots?</h3>
+			<p>No screenshots of our application can be shown due to legal reasons. The thumbnail in the portfolio (green eyes) is from theyetribe.com, which is the website of the hardware and API that we used for this project.
+			</p>
+		</div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
+		<div class='clear'></div>
 	</div>
-	
-	<div class="clear"></div>
-	<div class='clear'></div>
-	<div class='clear'></div>
-
-
-	<script type="text/javascript">
-		var toper = $('a#top');
-
-
-		$(window).scroll(function(){
-            if ($(this).scrollTop() > 100) {
-                toper.fadeIn( 200 );
-            } else {
-                toper.fadeOut( 200 );
-            }
-        });
-
-         toper.click(function(){
-        	$('html, body').animate({scrollTop:0}, 500);	        	
-        	return false;
-    	}); 
-	</script>
 </body>
 </html>
