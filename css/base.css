@@ -326,16 +326,13 @@ hr {
   width: 280px;
 }
 
-.imgDescription {
+.imgBlackBackground {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.6);
-  color: #ddd;
-  font-size: 14px;
-  font-weight: bold;
+  background: rgba(0, 0, 0, 0.7);
   opacity: 0;
 
   -webkit-transition: opacity 0.2s;
@@ -345,6 +342,50 @@ hr {
   transition: opacity 0.2s;
 }
 
+.imgTitle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #ddd;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Oxygen",sans-serif;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #ddd;
+  font-size: 15px;
+  font-family: "Open Sans",sans-serif;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.imgWrap:hover .imgBlackBackground {
+  opacity: 1;
+}
+
+.imgWrap:hover .imgTitle {
+  opacity: 1;
+}
 
 .imgWrap:hover .imgDescription {
   opacity: 1;
