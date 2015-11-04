@@ -31,7 +31,7 @@ a, a:visited {text-decoration: none; color: #484848;}
 * Headings
 */
 h1 {font-family: "Oxygen",sans-serif;}
-h2 {font-size: 13px; font-family: 'Open Sans', sans-serif; }
+h2 {font-size: 13px; font-family: 'Open Sans', sans-serif; padding: 5px 0;}
 h3 {font-size: 28px; font-family: 'Oxygen',sans-serif; font-weight: 400; padding: 20px 0; text-align:left}
 h4 {font-size: 18px; font-family: 'Oxygen'sans-serif;}
 h5 {font-size: 12px; font-family: 'Oxygen'sans-serif; padding-bottom: 10px;}
@@ -349,7 +349,7 @@ hr {
   left: 0;
   right: 0;
   color: #ddd;
-  font-size: 24px;
+  font-size: 32px;
   font-family: "Oxygen",sans-serif;
   opacity: 0;
 
