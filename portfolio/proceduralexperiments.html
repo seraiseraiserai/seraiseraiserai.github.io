@@ -84,7 +84,9 @@
 
 		<div class='eleven columns offset-by-two'>
 			<h3>Procedural Cities</h3>
-			<p>TODO
+			<p>The goal of my first prototype is to make cities. The user can specify the width and length of the city block and a maximum building height, and my script will pump out models.
+			</p><br>
+			<p>There are a lot of loops and mesh repetitions in my algorithm; each building window is copied many times to make a floor, and floors being copied to make a building. From this I learned that duplicating existing merged meshes is much faster than generating them from scratch, so I optimized my loops and code structure to take advantage of this fact and managed to increase my original algorithm's speed by 400%.
 			</p>
 		</div>
 		<div class='clear'></div>
@@ -106,7 +108,7 @@
 
 		<div class='eleven columns offset-by-two'>
 			<h3>Morphing Organic Shapes</h3>
-			<p>TODO
+			<p>My next step was to make something more organic and less geometric, and do so through procedural animation. I achieved the following video through soft-select transforming points on a sphere over time.
 			</p>
 		</div>
 		<div class='clear'></div>
@@ -130,8 +132,8 @@
 
 		<div class='eleven columns offset-by-two'>
 			<h3>Procedural Tentacle Variations</h3>
-			<p>TODO
-			</p>
+			<p>My third experiment generated tentacles. First I start off with a really long cone, and then distort it with a twist deformer at a random angle, followed by sprouting it at a random angle out from a point. I repeat the process till I get enough tentacles to look good.</p><br>
+			<p>Now that I have this algorithm, I merely vary the length and thickness of the tentacles, and the angles in which they are allowed to sprout out at, to get all the variations below.
 		</div>
 		<div class='clear'></div>
 		<div class='clear'></div>
@@ -153,8 +155,7 @@
 		
 		<div class='eleven columns offset-by-two'>
 			<h3>Animated Tentacles</h3>
-			<p>TODO
-			</p>
+			<p>Once the tentacles are generated, they can be procedurally animated by keyframing the twist deformer angle randomly. This allows me to manipulate hundreds of tentacles at the same time with minimal human effort. The finished tentacles can also be combined with traditional animations for storytelling.</p>
 		</div>
 		<div class='clear'></div>
 		<div class='clear'></div>
