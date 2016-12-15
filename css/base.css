@@ -102,7 +102,7 @@ header h8 {font-family: "Open Sans", sans-serif; font-size: 1.5em; margin-bottom
 /*
 * Logo
 */
-.logo a {color: #ddd; text-decoration: none; line-height: 20px; font-size: 20px; font-weight: bold; font-family: 'Oxygen',sans-serif}
+.logo a {color: #ddd; text-decoration: none; line-height: 20px; font-size: 20px; font-weight: normal; font-family: 'Oxygen',sans-serif}
 .logo a:hover {color: #5A99C7;
 	-webkit-transition: color .2s ease-in-out;
     -moz-transition: color .2s ease-in-out;
