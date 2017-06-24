@@ -7,15 +7,8 @@
 
 
 @font-face {
-    font-family: "Oxygen";
-    src: url('../fonts/Oxygen-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: "Open Sans";
-    src: url('../fonts/OpenSans-Regular.ttf') format('ttf');
+    src: url('../fonts/Open Sans-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -30,10 +23,10 @@ body {background: #fdfdfd	; color: #484848;}
 * Paragraph
 */
 p {
-  font-family: "Open Sans", sans-serif; 
+  font-family: "Open Sans", sans-serif;
   font-size: 16px; 
-  color: #555555; 
-  line-height: 25px;
+  color: #222222; 
+  line-height: 30px;
 }
 
 
@@ -50,14 +43,14 @@ a:visited {text-decoration: none; color: #5A99C7;}
 /*
 * Headings
 */
-h1 {font-family: "Oxygen", sans-serif; line-height: 130%;}
+h1 {font-family: "Open Sans", sans-serif; line-height: 130%;}
 h2 {font-size: 14px; font-family: 'Open Sans', sans-serif; font-weight: 400; padding: 5px 0;}
-h3 {font-size: 24px; font-family: 'Oxygen', sans-serif; font-weight: 400; padding: 20px 0; }
-h4 {font-size: 18px; font-family: 'Oxygen', sans-serif;}
-h5 {font-size: 12px; font-family: 'Oxygen', sans-serif; padding-bottom: 10px;}
-h6 {font-size: 8px; font-family: 'Oxygen', sans-serif; padding-bottom: 10px; font-weight: bold;}
-h5 b {font-weight: bold; font-family: 'Oxygen', sans-serif;}
-h7 {font-size: 11px; font-family: 'Oxygen',sans-serif; font-weight: 400; padding: 20px 0;}
+h3 {font-size: 24px; font-family: 'Open Sans', sans-serif; font-weight: 400; padding: 20px 0; }
+h4 {font-size: 18px; font-family: 'Open Sans', sans-serif;}
+h5 {font-size: 12px; font-family: 'Open Sans', sans-serif; padding-bottom: 10px;}
+h6 {font-size: 8px; font-family: 'Open Sans', sans-serif; padding-bottom: 10px; font-weight: bold;}
+h5 b {font-weight: bold; font-family: 'Open Sans', sans-serif;}
+h7 {font-size: 11px; font-family: 'Open Sans', sans-serif; font-weight: 400; padding: 20px 0;}
 h8 {font-size: 14px; font-family: 'Open Sans', sans-serif; font-weight: 400; padding: 20px 0;}
 
 /*
@@ -86,10 +79,10 @@ header .slogan a.green {margin: 13px 0; padding: 10px 28px;}
 header p {color: #484848;}
 header h1, header h2, header h3 {width: 100%; float: left; clear: both;  text-align: center; color: #484848; font-weight: 350;}
 header h4, header h5 {width: 100%; float: left; clear: both;  text-align: left; color: #484848; font-weight: 350;}
-header h1 {font-size: 4em; margin-bottom: 10px;}
+header h1 {font-size: 3em; margin-bottom: 0px;}
 header h2 {font-size: 17px; font-weight: 400}
 header h4 {font-weight: normal; margin-bottom: 10px;}
-header h7 {font-size: 2.4em; margin-bottom: 10px;}
+header h7 {font-size: 2.4em; margin-bottom: 10px; font-family: 'Open Sans', sans-serf; ;}
 header h8 {font-family: "Open Sans", sans-serif; font-size: 1.4em; margin-bottom: 10px;}
 
 
@@ -98,7 +91,7 @@ header h8 {font-family: "Open Sans", sans-serif; font-size: 1.4em; margin-bottom
 /*
 * Logo
 */
-.logo a {color: #111; text-decoration: none; line-height: 20px; font-size: 20px; font-weight: normal; font-family: 'Oxygen', sans-serif}
+.logo a {color: #222; text-decoration: none; line-height: 20px; font-size: 20px; font-weight: normal; font-family: 'Open Sans', sans-serif}
 .logo a:hover {color: #4999e0;
 	-webkit-transition: color .2s ease-in-out;
     -moz-transition: color .2s ease-in-out;
@@ -115,7 +108,7 @@ header h8 {font-family: "Open Sans", sans-serif; font-size: 1.4em; margin-bottom
 */
 ul.mainMenu {margin: 0; padding: 0; float: right;}
 ul.mainMenu li {display: inline; float: left; margin: 2px 10px;}
-ul.mainMenu li a {font-family: 'Oxygen', sans-serif; font-size: 14px; color: #1d67ab; text-decoration: none;}
+ul.mainMenu li a {font-family: 'Open Sans', sans-serif; font-size: 14px; color: #1d67ab; text-decoration: none;}
 ul.mainMenu li a:hover {color: #4999e0;
 	-webkit-transition: color .2s ease-in-out;
     -moz-transition: color .2s ease-in-out;
@@ -125,33 +118,6 @@ ul.mainMenu li a:hover {color: #4999e0;
 }
 
 
-
-
-/*
-* Orange
-*/
-.orange {width: 100%; float: left; clear: both; background: #4087B9; margin: 50px 0; padding: 45px 0; color: #fff; text-align: center; position: relative;z-index: 1;}
-.orange h2 {width: 100%; margin: 20px 0 50px; text-align: center; text-shadow: none;}
-.orange p {width: 600px; margin: 0 auto 30px; color: #fff; text-align: center;}
-.orange a.dalej {display: block; width: 185px; background: #2F6186; color: #fff; margin: 0 auto 20px; padding: 10px 20px; font-size: 12px; text-transform: uppercase;
-	border-radius: 30px;
-	-moz-border-radius: 30px;
-	-webkit-border-radius: 30px;
-}
-.orange a.dalej:hover {background: #fff; color: #2F6186;}
-
-/*
-* Gray
-*/
-.gray {width: 100%; float: left; clear: both; background: #f6f6f6; margin: 50px 0; padding: 45px 0; color: #484848; text-align: center; position: relative;z-index: 1;}
-.gray h2 {width: 100%; margin: 20px 0 50px; text-align: center; text-shadow: none;}
-.gray p {width: 100%; height: 100%; margin: 0 auto 30px; text-align: center;}
-.gray a.dalej {display: block; width: 185px; background: #2F6186; color: #fff; margin: 0 auto 20px; padding: 10px 20px; font-size: 12px; text-transform: uppercase;
-	border-radius: 30px;
-	-moz-border-radius: 30px;
-	-webkit-border-radius: 30px;
-}
-.gray a.dalej:hover {background: #fff; color: #2F6186;}
 
 	
 /*
@@ -254,7 +220,7 @@ a.blue:hover {background: #AED4F0}
 /*
 * Footer
 */
-footer {width: 100%; float: left; margin: 20px 0 0; padding: 30px 0; position: absolute; bottom: 0px; background: #333;}
+footer {width: 100%; float: left; margin: 20px 0 0; padding: 30px 0; position: absolute; bottom: 0px; background: #222;}
 footer h5 {color: #ccc;}
 footer p {color: #aaa; line-height: 15px; font-size: 12px; margin-bottom: 7px;}
 footer a {color: #ddd;}
